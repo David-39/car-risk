@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-# Cargar el modelo y variables
 filename = 'modelo-reg-tree-knn-nn.pkl'
-_, _, model_NN, variables, min_max_scaler = pickle.load(open(filename, 'rb'))
+
+with open(filename, 'rb') as f:
+    model_tree, model_KNN, model_NN, variables, min_max_scaler = pickle.load(f)
+
 
 # Extraer columnas dummy desde `variables`
 videojuegos_dummies = [v for v in variables if v.startswith("videojuego_")]

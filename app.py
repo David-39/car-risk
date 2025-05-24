@@ -17,7 +17,7 @@ plataforma_map = {v.replace("Plataforma_", "").replace("_", " "): v for v in pla
 
 # Imagen personalizada
 st.image(
-    "https://cdn.pixabay.com/photo/2017/01/31/13/14/controller-2020207_960_720.png",
+    "https://raw.githubusercontent.com/David-39/car-risk/master/assets/videogames.webp",
     caption="Bienvenido a la predicción de presupuesto gamer",
     use_container_width=True
 )

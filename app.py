@@ -15,9 +15,9 @@ plataformas_dummies = [v for v in variables if v.startswith("Plataforma_")]
 videojuego_map = {v.replace("videojuego_", "").replace("_", " "): v for v in videojuegos_dummies}
 plataforma_map = {v.replace("Plataforma_", "").replace("_", " "): v for v in plataformas_dummies}
 
-# Imagen personalizada
+# Imagen personalizada (ahora en formato PNG)
 st.image(
-    "https://raw.githubusercontent.com/David-39/car-risk/master/assets/videogames.webp",
+    "https://raw.githubusercontent.com/David-39/car-risk/master/assets/videogames.png",
     caption="Bienvenido a la predicción de presupuesto gamer",
     use_container_width=True
 )
